@@ -7,7 +7,7 @@
 // @include      https://*.douban.com/*
 // @grant        none
 // @require      https://cdnjs.cloudflare.com/ajax/libs/markdown-it/7.0.0/markdown-it.min.js
-// @require      https://raw.githubusercontent.com/markdown-it/markdown-it-footnote/master/dist/markdown-it-footnote.min.js
+// @require      https://greasyfork.org/scripts/21647-markdown-it-footnote/code/markdown-it-footnote.js?version=137863
 // ==/UserScript==
 
 (function() {
