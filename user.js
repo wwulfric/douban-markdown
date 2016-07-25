@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         douban markdown
-// @version      0.1
+// @version      0.2
 // @description  douban markdown
 // @author       haidao
 // @include      https://*.douban.com/*

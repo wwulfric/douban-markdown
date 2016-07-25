@@ -8,3 +8,5 @@ markdown，那么这个插件可能会比较好的帮助你。
 ![](./img/head@2x.png)
 
 ![](./img/tail@2x.png)
+
+安装参见[这里](https://greasyfork.org/zh-CN/scripts/21648/)
