@@ -1,6 +1,5 @@
 // ==UserScript==
-// @name         douban marked
-// @namespace    http://tampermonkey.net/
+// @name         douban markdown
 // @version      0.1
 // @description  douban markdown
 // @author       haidao
