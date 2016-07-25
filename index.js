@@ -2,17 +2,24 @@
 // @name         douban marked
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
+// @description  douban markdown
 // @author       haidao
-// @include      https://book.douban.com/review/*
+// @include      https://*.douban.com/*
 // @grant        none
-// @require      https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.js
+// @require      https://cdnjs.cloudflare.com/ajax/libs/markdown-it/7.0.0/markdown-it.min.js
+// @require      https://raw.githubusercontent.com/markdown-it/markdown-it-footnote/master/dist/markdown-it-footnote.min.js
 // ==/UserScript==
 
 (function() {
+  $('#link-report span a').each(function(i, e){
+    var c=$(e).text();
+    $(e).replaceWith(c);
+  });
   var content = $('#link-report span').html();
   content = content.replace(/<br>/g,'\n').replace(/&gt;/g,'>');
-  var marked_content = marked(content);
+  var mdf = window.markdownitFootnote;
+  var md = window.markdownit().use(mdf);
+  var marked_content = md.render(content);
   $('#link-report span').html(marked_content);
 
   var head = document.getElementsByTagName("head")[0], script;
